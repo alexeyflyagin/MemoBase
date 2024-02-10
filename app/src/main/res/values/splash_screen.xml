@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MemoBase.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen_icon</item>
+        <item name="windowSplashScreenBackground">#1B7C59</item>
+        <item name="postSplashScreenTheme">@style/Theme.MemoBase</item>
+    </style>
+</resources>
