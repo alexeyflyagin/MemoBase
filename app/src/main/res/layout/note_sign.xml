@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corners_100"
+    android:maxHeight="42dp"
+    android:maxWidth="42dp"
+    android:backgroundTint="@color/surface"
+    android:minWidth="42dp"
+    android:minHeight="42dp">
+
+    <TextView
+        android:id="@+id/tvSign"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textAppearance="@style/TextAppearance.MemoBase.HeadlineMedium"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        tools:text="💞"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/on_surface_variant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

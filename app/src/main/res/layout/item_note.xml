@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/surface_container_high"
+    android:focusable="true"
+    android:clickable="true">
+
+    <com.aflyagin.memobase.NoteSign
+        android:id="@+id/item_note_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginVertical="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/item_note_btnCheck"
+        style="@style/Widget.MemoBase.NoteItem.ButtonChecked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:translationX="6dp"
+        android:translationY="6dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/item_note_sign"
+        app:layout_constraintEnd_toEndOf="@+id/item_note_sign" />
+
+    <LinearLayout
+        android:id="@+id/item_note_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginVertical="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_note_sign"
+        app:layout_constraintEnd_toStartOf="@id/item_note_tvDate"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/item_note_tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.MemoBase.TitleLarge"
+            android:textColor="?attr/colorOnSurface"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/item_note_tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.MemoBase.BodyMedium"
+            android:textColor="?attr/colorOnSurface"
+            tools:text="@string/lorem_ipsum" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_note_tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MemoBase.BodySmall"
+        android:textColor="?attr/colorOutline"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_note_container"
+        tools:text="18.04.2023" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/item_note_btnFavorite"
+        style="@style/Widget.Material3.Button.IconButton.Outlined"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:minHeight="0dp"
+        app:icon="@drawable/ic_favorite_fill"
+        app:iconGravity="textStart"
+        app:iconSize="12dp"
+        app:iconTint="@color/error"
+        app:layout_constraintBottom_toBottomOf="@+id/item_note_container"
+        app:layout_constraintEnd_toEndOf="@+id/item_note_tvDate"
+        app:layout_constraintTop_toBottomOf="@+id/item_note_tvDate"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:dividerColor="@color/surface_container_lowest"
+        app:dividerThickness="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/item_note_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

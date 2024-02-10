@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="64dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/toolbar_notes_btnMenu"
+        style="@style/Widget.MemoBase.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:iconTint="?attr/colorPrimary"
+        android:layout_marginStart="6dp"
+        app:icon="@drawable/ic_app_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="6dp"
+        android:backgroundTint="?attr/colorSurfaceContainerLow"
+        app:icon="@drawable/ic_search"
+        app:iconGravity="textStart"
+        android:text="@string/find"
+        app:iconPadding="6dp"
+        app:iconSize="18dp"
+        app:iconTint="?attr/colorOutline"
+        android:textColor="?attr/colorOutline"
+        android:textAppearance="@style/TextAppearance.MemoBase.BodyLarge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/toolbar_notes_btnMore"
+        app:layout_constraintStart_toEndOf="@+id/toolbar_notes_btnMenu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/toolbar_notes_btnMore"
+        style="@style/Widget.MemoBase.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        app:icon="@drawable/ic_sort"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

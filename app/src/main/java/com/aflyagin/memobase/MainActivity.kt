@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         setUpTheme()
     }
 
-    @Suppress("DEPRECATION")
     private fun setUpTheme() {
         WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = true
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
