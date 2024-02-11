@@ -8,7 +8,7 @@
     android:focusable="true"
     android:clickable="true">
 
-    <com.aflyagin.memobase.NoteSign
+    <com.aflyagin.memobase.presentation.view.NoteSign
         android:id="@+id/item_note_sign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

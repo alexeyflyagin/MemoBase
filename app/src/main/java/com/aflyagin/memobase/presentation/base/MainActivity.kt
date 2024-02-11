@@ -1,4 +1,4 @@
-package com.aflyagin.memobase
+package com.aflyagin.memobase.presentation.base
 
 import android.graphics.Color
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.WindowInsetsControllerCompat
+import com.aflyagin.memobase.R
 
 
 class MainActivity : AppCompatActivity() {
