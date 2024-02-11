@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/Theme.MemoBase"
+    tools:background="@color/surface_container"
+    tools:context=".presentation.dialog.CatalogMenuDialog">
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:id="@+id/dialog_catalog_menu_dragHandle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dialog_catalog_menu_btnCatalogIcon"
+        style="@style/Widget.MemoBase.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="?attr/colorSurface"
+        app:icon="@drawable/ic_catalog_fill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_catalog_menu_dragHandle"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/dialog_catalog_menu_tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/newCatalog"
+        android:textAppearance="@style/TextAppearance.MemoBase.TitleLarge"
+        android:textColor="?attr/colorOnSurface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/dialog_catalog_menu_tvSubtitle"
+        app:layout_constraintTop_toTopOf="@id/dialog_catalog_menu_btnCatalogIcon"
+        app:layout_constraintStart_toEndOf="@+id/dialog_catalog_menu_btnCatalogIcon" />
+
+    <TextView
+        android:id="@+id/dialog_catalog_menu_tvSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/value_createdDate"
+        android:textAppearance="@style/TextAppearance.MemoBase.BodySmall"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_catalog_menu_btnCatalogIcon"
+        app:layout_constraintEnd_toEndOf="@+id/dialog_catalog_menu_tvTitle"
+        app:layout_constraintStart_toStartOf="@+id/dialog_catalog_menu_tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_catalog_menu_tvTitle" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dialog_catalog_menu_divider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
+        app:dividerColor="?attr/colorSurfaceContainerLowest"
+        app:layout_constraintTop_toBottomOf="@id/dialog_catalog_menu_btnCatalogIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dialog_catalog_menu_rvActions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:overScrollMode="ifContentScrolls"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/item_dialog_menu"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="10dp"
+        tools:itemCount="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_catalog_menu_divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

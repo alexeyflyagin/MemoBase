@@ -6,4 +6,11 @@
     <string name="all">Все</string>
     <string name="add">Добавить</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="newCatalog">Новый каталог</string>
+    <string name="naming">Название</string>
+    <string name="create">Создать</string>
+    <string name="change">Изменить</string>
+    <string name="neww">Новое</string>
+    <string name="value_createdDate">Создано: %s</string>
+    <string name="delete">Удалить</string>
 </resources>

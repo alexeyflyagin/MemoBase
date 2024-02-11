@@ -37,9 +37,19 @@
         <item name="colorControlHighlight">@color/highlight</item>
         <item name="android:textColorHighlight">@color/text_highlight</item>
 
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="bottomSheetDragHandleStyle">@style/Widget.MemoBase.BottomSheet.DragHandle</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.MemoBase.BottomSheetDialog</item>
         <item name="materialButtonStyle">@style/Widget.MemoBase.Button</item>
+        <item name="textInputFilledDenseStyle">@style/Widget.MemoBase.TextInputLayout.FilledBox</item>
         <item name="tabStyle">@style/Widget.Material3.TabLayout</item>
     </style>
 
     <style name="Theme.MemoBase" parent="Base.Theme.MemoBase" />
+
+    <style name="ThemeOverlay.MemoBase.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="android:backgroundDimAmount">0.2</item>
+        <item name="bottomSheetStyle">@style/Widget.MemoBase.BottomSheet</item>
+    </style>
 </resources>
