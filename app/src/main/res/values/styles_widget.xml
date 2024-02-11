@@ -10,7 +10,6 @@
         <item name="cornerRadius">8dp</item>
     </style>
 
-
     <style name="Widget.MemoBase.NoteItem.ButtonChecked" parent="@style/Widget.MemoBase.Button.IconButton">
         <item name="android:minWidth">30dp</item>
         <item name="android:minHeight">30dp</item>
@@ -24,5 +23,28 @@
         <item name="iconGravity">textStart</item>
         <item name="iconPadding">0dp</item>
         <item name="iconSize">22dp</item>
+    </style>
+
+    <style name="Widget.MemoBase.BottomSheet.DragHandle" parent="Widget.Material3.BottomSheet.DragHandle">
+        <item name="tint">?attr/colorOutline</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="Widget.MemoBase.TextInputLayout.FilledBox" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxBackgroundColor">@color/surface_container_low</item>
+        <item name="boxBackgroundMode">filled</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+
+    <style name="Widget.MemoBase.BottomSheet" parent="Widget.Material3.BottomSheet">
+        <item name="backgroundTint">@color/surface_container</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.MemoBase.BottomSheetDialog</item>
     </style>
 </resources>
