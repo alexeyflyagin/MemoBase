@@ -1,4 +1,4 @@
-package com.aflyagin.memobase
+package com.aflyagin.memobase.presentation.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

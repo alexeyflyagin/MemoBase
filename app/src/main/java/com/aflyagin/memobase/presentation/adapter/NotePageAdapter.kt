@@ -1,6 +1,5 @@
-package com.aflyagin.memobase
+package com.aflyagin.memobase.presentation.adapter
 
-import android.graphics.drawable.Drawable
 import androidx.annotation.DrawableRes
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter

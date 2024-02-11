@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/notesFragment"
-        android:name="com.aflyagin.memobase.NotesFragment"
+        android:name="com.aflyagin.memobase.presentation.fragment.NotesFragment"
         android:label="fragment_notes"
         tools:layout="@layout/fragment_notes" />
 </navigation>
