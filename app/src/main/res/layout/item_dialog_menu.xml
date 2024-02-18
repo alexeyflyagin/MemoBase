@@ -8,7 +8,8 @@
     android:maxHeight="48dp"
     android:clickable="true"
     android:focusable="true"
-    android:background="@drawable/ripple_corners_8">
+    android:background="@drawable/ripple_corners_8"
+    android:backgroundTint="?attr/colorSurface">
 
     <ImageView
         android:id="@+id/item_dialog_menu_ivIcon"

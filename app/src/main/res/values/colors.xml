@@ -24,6 +24,7 @@
     <color name="on_error_container">#511511</color>
 
     <color name="surface">#F0F0F0</color>
+    <color name="daslg">#F0F0F0</color>
     <color name="surface_dim">#DEDEDE</color>
     <color name="surface_bright">#FFFFFF</color>
     <color name="surface_container">#F8F8F8</color>

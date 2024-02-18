@@ -9,5 +9,18 @@
         android:id="@+id/notesFragment"
         android:name="com.aflyagin.memobase.presentation.fragment.NotesFragment"
         android:label="fragment_notes"
-        tools:layout="@layout/fragment_notes" />
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_catalogsFragment"
+            app:destination="@id/catalogsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/catalogsFragment"
+        android:name="com.aflyagin.memobase.presentation.fragment.CatalogsFragment"
+        android:label="fragment_catalogs"
+        tools:layout="@layout/fragment_catalogs" />
 </navigation>

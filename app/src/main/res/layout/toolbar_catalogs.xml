@@ -6,44 +6,37 @@
     android:minHeight="64dp">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/toolbar_notes_btnMenu"
+        android:id="@+id/toolbar_catalogs_btnMenu"
         style="@style/Widget.MemoBase.Button.IconButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:iconTint="?attr/colorPrimary"
         android:layout_marginStart="6dp"
-        app:icon="@drawable/ic_app_logo_outline"
+        app:icon="@drawable/ic_app_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="0dp"
-        android:layout_height="52dp"
-        android:layout_marginHorizontal="6dp"
-        android:backgroundTint="?attr/colorSurfaceContainerLow"
-        app:icon="@drawable/ic_search"
-        app:iconGravity="textStart"
-        android:text="@string/find"
-        app:iconPadding="6dp"
-        app:iconSize="18dp"
-        app:iconTint="?attr/colorOutline"
-        android:textColor="?attr/colorOutline"
-        android:textAppearance="@style/TextAppearance.MemoBase.BodyLarge"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.MemoBase.TitleLarge"
+        android:textSize="22sp"
+        android:textColor="@color/on_surface"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/toolbar_notes_btnMore"
-        app:layout_constraintStart_toEndOf="@+id/toolbar_notes_btnMenu"
+        app:layout_constraintEnd_toStartOf="@+id/toolbar_catalogs_btnSettings"
+        app:layout_constraintStart_toEndOf="@+id/toolbar_catalogs_btnMenu"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/toolbar_notes_btnMore"
+        android:id="@+id/toolbar_catalogs_btnSettings"
         style="@style/Widget.MemoBase.Button.IconButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:icon="@drawable/ic_setting"
         android:layout_marginEnd="6dp"
-        app:icon="@drawable/ic_sort"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

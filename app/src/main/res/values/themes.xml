@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.MemoBase" parent="Theme.Material3.DayNight.NoActionBar">
 
@@ -42,14 +42,15 @@
         <item name="bottomSheetDragHandleStyle">@style/Widget.MemoBase.BottomSheet.DragHandle</item>
         <item name="bottomSheetDialogTheme">@style/ThemeOverlay.MemoBase.BottomSheetDialog</item>
         <item name="materialButtonStyle">@style/Widget.MemoBase.Button</item>
-        <item name="textInputFilledDenseStyle">@style/Widget.MemoBase.TextInputLayout.FilledBox</item>
+        <item name="textInputFilledDenseStyle">@style/Widget.MemoBase.TextInputLayout.OutlineBox</item>
         <item name="tabStyle">@style/Widget.Material3.TabLayout</item>
+        <item name="android:statusBarColor">@color/surface_container</item>
     </style>
 
     <style name="Theme.MemoBase" parent="Base.Theme.MemoBase" />
 
     <style name="ThemeOverlay.MemoBase.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
-        <item name="android:backgroundDimAmount">0.2</item>
+        <item name="android:backgroundDimAmount">0.24</item>
         <item name="bottomSheetStyle">@style/Widget.MemoBase.BottomSheet</item>
     </style>
 </resources>

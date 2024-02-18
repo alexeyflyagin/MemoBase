@@ -5,11 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.aflyagin.memobase.databinding.FragmentNotesBinding
 import com.aflyagin.memobase.presentation.dialog.CatalogMenuDialog
 import com.aflyagin.memobase.presentation.dialog.CreateCatalogDialog
 import com.aflyagin.memobase.presentation.setOnClickDebuonceListener
 import com.aflyagin.memobase.presentation.setOnLongClickDebuonceListener
+import java.util.concurrent.TimeUnit
 
 class NotesFragment : Fragment() {
 
@@ -20,6 +22,7 @@ class NotesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        postponeEnterTransition(1, TimeUnit.MILLISECONDS)
         _binding = FragmentNotesBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -36,7 +39,10 @@ class NotesFragment : Fragment() {
                 true
             }
         }
-
+        toolbarNotes.toolbarNotesBtnMenu.setOnClickDebuonceListener {
+            val direction = NotesFragmentDirections.actionNotesFragmentToCatalogsFragment()
+            findNavController().navigate(direction)
+        }
     }
 
     override fun onDestroy() {
